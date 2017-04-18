@@ -1,0 +1,28 @@
+var path = require('path');
+
+module.exports = {
+  entry: './app/index.es6',
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve('./app/', 'dist')
+  },
+  module: {
+    rules: [
+    {
+      test: /\.css$/,
+      use: 'css-loader'
+        },
+    {
+      test: /\.es6$/,
+      exclude: /node_modules/,
+      loader: 'babel-loader',
+      query: {
+        presets: ['react', 'es2015']
+      }
+    }
+    ]
+  },
+  resolve: {
+    extensions: ['.js', '.es6']
+  }
+}
