@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { HelloModule } from "./HelloModule";
+import BasicExample from "./router/App";
+
 
 ReactDOM.render(
-    <HelloModule name="World"/>,
+    <BasicExample name="World"/>,
     document.getElementById("container")
 );
