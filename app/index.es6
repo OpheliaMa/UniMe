@@ -1,9 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import BasicExample from "./router/App";
-
+import InputField from "./InputField";
 
 ReactDOM.render(
-    <BasicExample name="World"/>,
+    <InputField name="World"/>,
     document.getElementById("container")
 );
