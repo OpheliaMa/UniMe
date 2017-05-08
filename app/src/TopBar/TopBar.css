@@ -1,0 +1,19 @@
+:global(.test) {
+    width: 100%;
+    background-color: antiquewhite;
+}
+:global(.top) {
+    height: 120px;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+    float: left;
+    margin-left: 2em;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
