@@ -6,6 +6,7 @@ import React from 'react'
 import ReactDOM from "react-dom";
 import {
     BrowserRouter as Router,
+    Switch,
     Route
 } from 'react-router-dom'
 
@@ -23,11 +24,14 @@ class UniMe extends React.Component {
             <Router>
                 <div>
                     <TopBar />
-                    <Route exact path="/" component={HomePage}/>
-                    <Route path="/core" component={CoreProject}/>
-                    <Route path="/service" component={ProService}/>
-                    <Route path="/cases" component={PartnerCases}/>
-                    <Route path="/about" component={AboutUs}/>
+                    <Switch>
+                        <Route exact path="/" component={HomePage}/>
+                        <Route path="/core" component={CoreProject}/>
+                        <Route path="/service" component={ProService}/>
+                        <Route path="/cases" component={PartnerCases}/>
+                        <Route path="/about" component={AboutUs}/>
+                        <Route component={HomePage}/>
+                    </Switch>
                 </div>
             </Router>
         )
