@@ -2,3 +2,52 @@
     background-image: url("http://ofnfjq2yy.bkt.clouddn.com/kv.png");
     height:1080px;
 }
+:global(.homepage_gallery) {
+    width: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 180px;
+    overflow: auto;
+}
+:global(.home_gal_item) {
+    width: 49.5%;
+    float: left;
+}
+:global(.home_gal_3plusn) {
+    float: right;
+}
+
+:global(.home_gal_elites) {
+    float: right;
+}
+
+:global(.home_gal_dbm) {
+    margin-top: 5%;
+}
+
+:global(.home_gal_elites) {
+    margin-top: 5%;
+}
+
+.home_gal_item img.home_gal_item_cover {
+    max-width: 100%;
+    border: none;
+}
+
+.home_gal_item img.home_gal_item_cover_indicator {
+    position: absolute;
+    width: 12%;
+    top: 44%;
+    left: 44%;
+}
+
+.home_gal_item_cover_container {
+    position: relative;
+    font-size: 0;
+}
+
+:global(.home_gal_item_des) {
+    border: 1px solid #CCCCCC;
+    height: 32%;
+    position: relative;
+}
