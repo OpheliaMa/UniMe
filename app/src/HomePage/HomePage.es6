@@ -1,5 +1,6 @@
 import * as React from "react";
 import './HomePage.css'
+import Footer from "../Footer/Footer";
 
 class HomePage extends React.Component {
     render() {
@@ -33,7 +34,7 @@ class HomePage extends React.Component {
                             <img className="home_gal_item_cover_indicator"
                                  src="http://ofnfjq2yy.bkt.clouddn.com/icon_cover_indicator.png"/>
                         </div>
-                        <div className="home_gal_item_des_container home_gal_item_des_container_3pn">
+                        <div className="home_gal_item_des_container">
                             <div className="home_gal_item_des">
                                 <p>3+N International Bachelor & Master</p>
                                 <p>Degree Program</p>
@@ -127,13 +128,18 @@ class HomePage extends React.Component {
                 </div>
 
                 <div className="home_cont_us_container">
+                    <h6 className="home_cont_us_title">Contact Us</h6>
 
+                    <div className="home_cont_us_content">
+                        <p>Address: 21F,618 East Yan An Rd,East Ocean Centre,Huangpu</p>
+                        <p>District,Shanghai,China</p>
+                        <p>Tel: +86 21 8023 6022</p>
+                        <p>Email: unime_china@163.com</p>
+                        <p>Website: www.unime-china.org.cn </p>
+                    </div>
                 </div>
 
-                <div className="home_footer">
-
-                </div>
-
+                <Footer />
 
             </div>
         );

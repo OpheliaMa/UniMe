@@ -19,6 +19,7 @@
 :global(.home_gal_item) {
     width: 49.5%;
     float: left;
+    cursor: pointer;
 }
 
 :global(.home_gal_3plusn) {
@@ -62,6 +63,14 @@
     padding-bottom: 32.62%; /* padding按百分比计算 是父元素宽度的百分比 */
 }
 
+.home_gal_item:hover .home_gal_item_des_container {
+    background-color: #DC2C2C;
+}
+
+.home_gal_item:hover p {
+    color: #FFFFFF;
+}
+
 :global(.home_gal_item_des_container_3pn) {
     background-color: #DC2C2C;
 }
@@ -78,10 +87,6 @@
     color: #666666;
     text-align: center;
     font-size: 1.5rem;
-}
-
-.home_gal_item_des_container_3pn div.home_gal_item_des {
-    color: #FFFFFF;
 }
 
 .nzup_logo {
@@ -162,10 +167,24 @@
     height: 0;
     padding-bottom: 38.541%;
     margin-top: 4%;
+    position: relative;
 }
 
-.home_footer {
-    background-color: #333333;
-    height: 0;
-    padding-bottom: 14.947%;
+.home_cont_us_title, .home_cont_us_content {
+    color: #FFFFFF;
+    position: absolute;
+    left: 50.52%;
+}
+
+.home_cont_us_title {
+    top: 11.56%;
+}
+
+.home_cont_us_content {
+    top: 21.387%;
+}
+
+.home_cont_us_content p {
+    font-size: 18px;
+    line-height: 36px;
 }

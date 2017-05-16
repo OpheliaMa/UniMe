@@ -26,7 +26,7 @@ html {
 }
 
 :global(.selected) {
-    color: indianred;
+    color: #DC2C2C;
 }
 
 :global(.top) {
