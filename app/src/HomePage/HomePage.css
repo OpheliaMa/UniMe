@@ -1,5 +1,5 @@
 :global(.homepage_kv) {
-    background-image: url("http://ofnfjq2yy.bkt.clouddn.com/kv.png");
+    background-image: url("http://ofnfjq2yy.bkt.clouddn.com/home_kv.png");
     background-repeat: no-repeat;
     background-size: auto;
     background-color: transparent;
@@ -57,6 +57,7 @@
 
 :global(.home_gal_item_des_container) {
     border: 1px solid #CCCCCC;
+    border-top: none;
     position: relative;
     /* 实现高宽同一比例缩放 */
     height: 0;
@@ -86,7 +87,25 @@
     -o-transform: translate(-50%, -50%);
     color: #666666;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 32px;
+}
+
+@media only screen and (max-width: 1420px) {
+    .home_gal_item_des {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    .home_gal_item_des {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .home_gal_item_des {
+        font-size: 20px;
+    }
 }
 
 .nzup_logo {
@@ -127,14 +146,22 @@
     float: left;
     margin-top: 20px;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .home_reg_form_label {
-    width: 32.30%;
+    width: 36.50%;
     float: left;
     text-align: right;
     color: #666666;
     font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
 }
 
 .home_reg_form_input {
@@ -149,13 +176,31 @@
     padding-bottom: 5.56%;
 }
 
-.home_reg_form_input button {
+.home_reg_reg_btn {
     width: 47.62%;
     background: #DC2C2C;
     border: 1px solid transparent;
     height: 0;
     padding-bottom: 5.56%;
+    position: relative;
+}
+
+.home_reg_reg_link {
+    position: absolute;
+    left: 50%;
+    top: 50%;
     color: #FFFFFF;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 1070px) {
+    .home_reg_reg_link {
+        font-size: 16px;
+    }
 }
 
 .home_cont_us_container {

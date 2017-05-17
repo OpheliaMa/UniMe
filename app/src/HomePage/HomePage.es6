@@ -3,6 +3,26 @@ import './HomePage.css'
 import Footer from "../Footer/Footer";
 
 class HomePage extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            nzupSrc: "http://ofnfjq2yy.bkt.clouddn.com/nzup_logo.png"
+        };
+    }
+
+    _mouseOver() {
+        this.setState({
+            nzupSrc: "http://ofnfjq2yy.bkt.clouddn.com/nzup_logo_selected.png"
+        });
+    }
+
+    _mouseOut() {
+        this.setState({
+            nzupSrc: "http://ofnfjq2yy.bkt.clouddn.com/nzup_logo.png"
+        });
+    }
+
     render() {
         return (
             <div className="homepage_container">
@@ -11,7 +31,7 @@ class HomePage extends React.Component {
 
 
                 <div className="homepage_gallery">
-                    <div className="home_gal_item home_gal_nzup">
+                    <div ref="nzupLogo" className="home_gal_item home_gal_nzup" onMouseOver={this._mouseOver.bind(this)} onMouseOut={this._mouseOut.bind(this)}>
                         <div className="home_gal_item_cover_container">
                             <img className="home_gal_item_cover" src="http://ofnfjq2yy.bkt.clouddn.com/nzup.png"/>
                             <img className="home_gal_item_cover_indicator"
@@ -21,7 +41,7 @@ class HomePage extends React.Component {
                         <div className="home_gal_item_des_container">
                             <div className="home_gal_item_des">
                                 <p>NZUP Program</p>
-                                <img className="nzup_logo" src="http://ofnfjq2yy.bkt.clouddn.com/nzup_logo.png"/>
+                                <img  className="nzup_logo" src={this.state.nzupSrc}/>
                             </div>
                         </div>
 
@@ -118,7 +138,9 @@ class HomePage extends React.Component {
 
                         <label className="home_reg_form_row">
                             <div className="home_reg_form_input">
-                                <button>Register Now</button>
+                                <div className="home_reg_reg_btn">
+                                    <a className="home_reg_reg_link">Register Now</a>
+                                </div>
                             </div>
                         </label>
 
@@ -142,7 +164,8 @@ class HomePage extends React.Component {
                 <Footer />
 
             </div>
-        );
+        )
+            ;
     }
 }
 
