@@ -48,6 +48,13 @@ html {
     color: #DC2C2C;
 }
 
+.top_fixed {
+    position: fixed;
+    width: 100%;
+    background: #FFFFFF;
+    z-index: 2;
+}
+
 :global(.top) {
     height: 120px;
     width: auto;
