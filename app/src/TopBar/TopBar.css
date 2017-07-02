@@ -11,8 +11,7 @@ html {
 
 :global(.top_nav) {
     position: absolute;
-    left: 20%;
-    margin-left: 5%;
+    left: 27.8125%;
     top: 50%;
     transform: translate(0%, -50%);
     -moz-transform: translate(0%, -50%);
@@ -22,25 +21,25 @@ html {
 }
 
 .top_nav a {
-    font-size: 24px;
+    font-size: 20px;
     margin-left: 2.24em;
 }
 
 @media only screen and (max-width: 1420px) {
     .top_nav a {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
 @media only screen and (max-width: 1200px) {
     .top_nav a {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
 @media only screen and (max-width: 1000px) {
     .top_nav a {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
@@ -56,17 +55,17 @@ html {
 }
 
 :global(.top) {
-    height: 120px;
+    height: 100px;
     width: auto;
     padding-left: 10%;
     position: relative;
 }
 
 .top_logo_container {
-    width: 14.895%;
+    width: 11.197%;
     position: absolute;
     top: 50%;
-    left: 15%;
+    left: 14.5729%;
     font-size: 0;
     transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);

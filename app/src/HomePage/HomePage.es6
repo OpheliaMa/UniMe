@@ -1,25 +1,26 @@
 import * as React from "react";
 import './HomePage.css'
 import Footer from "../Footer/Footer";
+import ContactUs from "../ContactUs/ContactUs";
 
 class HomePage extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            nzupSrc: "http://ofnfjq2yy.bkt.clouddn.com/nzup_logo.png"
+            nzupSrc: "http://oq9er0rnu.bkt.clouddn.com/nzup_logo.png"
         };
     }
 
     _mouseOver() {
         this.setState({
-            nzupSrc: "http://ofnfjq2yy.bkt.clouddn.com/nzup_logo_selected.png"
+            nzupSrc: "http://oq9er0rnu.bkt.clouddn.com/nzup_logo_selected.png"
         });
     }
 
     _mouseOut() {
         this.setState({
-            nzupSrc: "http://ofnfjq2yy.bkt.clouddn.com/nzup_logo.png"
+            nzupSrc: "http://oq9er0rnu.bkt.clouddn.com/nzup_logo.png"
         });
     }
 
@@ -31,17 +32,18 @@ class HomePage extends React.Component {
 
 
                 <div className="homepage_gallery">
-                    <div ref="nzupLogo" className="home_gal_item home_gal_nzup" onMouseOver={this._mouseOver.bind(this)} onMouseOut={this._mouseOut.bind(this)}>
+                    <div ref="nzupLogo" className="home_gal_item home_gal_nzup" onMouseOver={this._mouseOver.bind(this)}
+                         onMouseOut={this._mouseOut.bind(this)}>
                         <div className="home_gal_item_cover_container">
-                            <img className="home_gal_item_cover" src="http://ofnfjq2yy.bkt.clouddn.com/nzup.png"/>
+                            <img className="home_gal_item_cover" src="http://oq9er0rnu.bkt.clouddn.com/nzup.png"/>
                             <img className="home_gal_item_cover_indicator"
-                                 src="http://ofnfjq2yy.bkt.clouddn.com/icon_cover_indicator.png"/>
+                                 src="http://oq9er0rnu.bkt.clouddn.com/icon_cover_indicator.png"/>
                         </div>
 
                         <div className="home_gal_item_des_container">
                             <div className="home_gal_item_des">
                                 <p>NZUP Program</p>
-                                <img  className="nzup_logo" src={this.state.nzupSrc}/>
+                                <img className="nzup_logo" src={this.state.nzupSrc}/>
                             </div>
                         </div>
 
@@ -50,9 +52,9 @@ class HomePage extends React.Component {
                     <div className="home_gal_item home_gal_3plusn">
 
                         <div className="home_gal_item_cover_container">
-                            <img className="home_gal_item_cover" src="http://ofnfjq2yy.bkt.clouddn.com/3plusn.png"/>
+                            <img className="home_gal_item_cover" src="http://oq9er0rnu.bkt.clouddn.com/3plusn.png"/>
                             <img className="home_gal_item_cover_indicator"
-                                 src="http://ofnfjq2yy.bkt.clouddn.com/icon_cover_indicator.png"/>
+                                 src="http://oq9er0rnu.bkt.clouddn.com/icon_cover_indicator.png"/>
                         </div>
                         <div className="home_gal_item_des_container">
                             <div className="home_gal_item_des">
@@ -66,9 +68,9 @@ class HomePage extends React.Component {
                     <div className="home_gal_item home_gal_dbm">
 
                         <div className="home_gal_item_cover_container">
-                            <img className="home_gal_item_cover" src="http://ofnfjq2yy.bkt.clouddn.com/dbm.png"/>
+                            <img className="home_gal_item_cover" src="http://oq9er0rnu.bkt.clouddn.com/dbm.png"/>
                             <img className="home_gal_item_cover_indicator"
-                                 src="http://ofnfjq2yy.bkt.clouddn.com/icon_cover_indicator.png"/>
+                                 src="http://oq9er0rnu.bkt.clouddn.com/icon_cover_indicator.png"/>
                         </div>
                         <div className="home_gal_item_des_container">
                             <div>
@@ -84,9 +86,9 @@ class HomePage extends React.Component {
                     <div className="home_gal_item home_gal_elites">
 
                         <div className="home_gal_item_cover_container">
-                            <img className="home_gal_item_cover" src="http://ofnfjq2yy.bkt.clouddn.com/elites.png"/>
+                            <img className="home_gal_item_cover" src="http://oq9er0rnu.bkt.clouddn.com/elites.png"/>
                             <img className="home_gal_item_cover_indicator"
-                                 src="http://ofnfjq2yy.bkt.clouddn.com/icon_cover_indicator.png"/>
+                                 src="http://oq9er0rnu.bkt.clouddn.com/icon_cover_indicator.png"/>
                         </div>
                         <div className="home_gal_item_des_container">
                             <div className="home_gal_item_des">
@@ -149,17 +151,7 @@ class HomePage extends React.Component {
 
                 </div>
 
-                <div className="home_cont_us_container">
-                    <h6 className="home_cont_us_title">Contact Us</h6>
-
-                    <div className="home_cont_us_content">
-                        <p>Address: 21F,618 East Yan An Rd,East Ocean Centre,Huangpu</p>
-                        <p>District,Shanghai,China</p>
-                        <p>Tel: +86 21 8023 6022</p>
-                        <p>Email: unime_china@163.com</p>
-                        <p>Website: www.unime-china.org.cn </p>
-                    </div>
-                </div>
+                <ContactUs/>
 
                 <Footer />
 

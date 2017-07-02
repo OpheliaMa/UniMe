@@ -11,7 +11,7 @@ class TopBar extends React.Component {
             <div className="top_fixed">
                 <div className="top">
                     <div className="top_logo_container">
-                        <img className="top_logo" src="http://ofnfjq2yy.bkt.clouddn.com/logo_top.png"/>
+                        <img className="top_logo" src="http://oq9er0rnu.bkt.clouddn.com/logo_top.png"/>
                     </div>
                     <ul className="top_nav">
                         <li><NavLink to="/" exact activeClassName="selected">Homepage</NavLink></li>

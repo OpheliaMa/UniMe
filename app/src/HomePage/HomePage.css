@@ -1,23 +1,20 @@
 :global(.homepage_kv) {
-    background-image: url("http://ofnfjq2yy.bkt.clouddn.com/home_kv.png");
-    background-repeat: no-repeat;
     background-size: auto;
-    background-color: transparent;
-    background-position: 50% 50%;
+    background: transparent url("http://oq9er0rnu.bkt.clouddn.com/home_kv.png") no-repeat 50% 50%;
     height: 0;
     padding-bottom: 56.25%;
 }
 
 :global(.homepage_gallery) {
     width: auto;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-top: 180px;
+    padding-left: 22.2395%;
+    padding-right: 22.2395%;
+    margin-top: 120px;
     overflow: auto;
 }
 
 :global(.home_gal_item) {
-    width: 49.5%;
+    width: 46.5%;
     float: left;
     cursor: pointer;
 }
@@ -31,11 +28,11 @@
 }
 
 :global(.home_gal_dbm) {
-    margin-top: 5%;
+    margin-top: 6%;
 }
 
 :global(.home_gal_elites) {
-    margin-top: 5%;
+    margin-top: 6%;
 }
 
 .home_gal_item img.home_gal_item_cover {
@@ -62,6 +59,7 @@
     /* 实现高宽同一比例缩放 */
     height: 0;
     padding-bottom: 32.62%; /* padding按百分比计算 是父元素宽度的百分比 */
+    overflow: hidden;
 }
 
 .home_gal_item:hover .home_gal_item_des_container {
@@ -87,24 +85,24 @@
     -o-transform: translate(-50%, -50%);
     color: #666666;
     text-align: center;
-    font-size: 32px;
+    font-size: 22px;
 }
 
 @media only screen and (max-width: 1420px) {
     .home_gal_item_des {
-        font-size: 28px;
+        font-size: 18px;
     }
 }
 
 @media only screen and (max-width: 1240px) {
     .home_gal_item_des {
-        font-size: 24px;
+        font-size: 14px;
     }
 }
 
 @media only screen and (max-width: 1060px) {
     .home_gal_item_des {
-        font-size: 20px;
+        font-size: 14px;
     }
 }
 
@@ -115,7 +113,8 @@
 
 .home_registration {
     background-color: #FBFBFB;
-    margin-top: 10%;
+    margin-top: 6%;
+    padding-bottom: 4%;
 }
 
 .home_reg_title {
@@ -123,8 +122,8 @@
     text-align: center;
     color: #333;
     font-size: 28px;
-    padding-top: 8.1%;
-    padding-bottom: 1.5%;
+    padding-top: 3.125%;
+    padding-bottom: 1.04%;
 }
 
 .home_reg_title_indicator {
@@ -150,11 +149,11 @@
 }
 
 .home_reg_form_label {
-    width: 36.50%;
+    width: 40.50%;
     float: left;
     text-align: right;
     color: #666666;
-    font-size: 20px;
+    font-size: 14px;
     position: absolute;
     top: 50%;
     transform: translate(0%, -50%);
@@ -165,23 +164,23 @@
 }
 
 .home_reg_form_input {
-    width: 60%;
+    width: 58%;
     float: right;
 }
 
 .home_reg_form_input_container {
     border: 1px solid #E2E2E2;
-    width: 47.62%;
+    width: 31.25%;
     height: 0;
-    padding-bottom: 5.56%;
+    padding-bottom: 3.125%;
 }
 
 .home_reg_reg_btn {
-    width: 47.62%;
+    width: 31.25%;
     background: #DC2C2C;
     border: 1px solid transparent;
     height: 0;
-    padding-bottom: 5.56%;
+    padding-bottom: 3.125%;
     position: relative;
 }
 
@@ -195,41 +194,11 @@
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
+    font-size: 18px;
 }
 
 @media only screen and (max-width: 1070px) {
     .home_reg_reg_link {
-        font-size: 16px;
+        font-size: 12px;
     }
-}
-
-.home_cont_us_container {
-    background: url("http://ofnfjq2yy.bkt.clouddn.com/address_bg.png");
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-color: transparent;
-    background-position: 50% 50%;
-    height: 0;
-    padding-bottom: 38.541%;
-    margin-top: 4%;
-    position: relative;
-}
-
-.home_cont_us_title, .home_cont_us_content {
-    color: #FFFFFF;
-    position: absolute;
-    left: 50.52%;
-}
-
-.home_cont_us_title {
-    top: 11.56%;
-}
-
-.home_cont_us_content {
-    top: 21.387%;
-}
-
-.home_cont_us_content p {
-    font-size: 18px;
-    line-height: 36px;
 }

@@ -16,10 +16,10 @@ class Footer extends React.Component {
 
                 <div className="home_footer_nav_container">
                     <div className="home_footer_logo_container">
-                        <img className="home_footer_logo" src="http://ofnfjq2yy.bkt.clouddn.com/bottom_logo.png"/>
+                        <img className="home_footer_logo" src="http://oq9er0rnu.bkt.clouddn.com/logo_bottom.png"/>
                     </div>
                     <div className="home_footer_nav">
-                        <div className="home_footer_nav_text"><NavLink to="/" exact activeClassName="selected">HomePage</NavLink></div>
+                        <div className="home_footer_nav_text"><NavLink to="/" exact activeClassName="selected">Homepage</NavLink></div>
                         <i></i>
                         <div className="home_footer_nav_text"><NavLink to="/core" activeClassName="selected">Core Project</NavLink></div>
                         <i></i>

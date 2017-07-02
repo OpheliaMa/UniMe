@@ -16,13 +16,14 @@ import CoreProject from "./CoreProject/CoreProject";
 import ProService from "./ProService/ProService";
 import PartnerCases from "./PartnerCases/PartnerCases";
 import AboutUs from "./AboutUs/AboutUs";
+import "./App.css"
 
 class UniMe extends React.Component {
 
     render() {
         return (
             <Router>
-                <div>
+                <div className="container">
                     <TopBar />
                     <Switch>
                         <Route exact path="/" component={HomePage}/>
