@@ -201,23 +201,47 @@ const data = [
 
 class CoreProject extends React.Component {
 
+    _onReSize() {
+        alert("aaa");
+    }
+
     render() {
         return (
             <div className="project_container">
                 <div className="project_kv">
                 </div>
-                <div className="project_content_container">
+                <div id="project_content_container" className="project_content_container">
                     <h1 className="project_title">CORE PROJECTS</h1>
                     <div className="project_content_list">
-                        {data.map((item) => {
-                            return <CoreProjectItem imageSrc={item.imageSrc} content={item.content}/>
+                        {data.map((item, index) => {
+                            return <CoreProjectItem key={"item" + index} imageSrc={item.imageSrc} content={item.content}/>
                         })}
                     </div>
                 </div>
-                <div className="project_empty"></div>
+                <div id="project_empty" className="project_empty">
+                </div>
                 <Footer/>
+
             </div>
         );
+    }
+
+    componentDidMount() {
+        var contentDocument = document.getElementById("project_content_container");
+        var targetDocument = document.getElementById("project_empty");
+        this._calcEmptyHeight(contentDocument, targetDocument);
+        document.body.onresize = function () {
+            this._calcEmptyHeight(contentDocument, targetDocument);
+        }.bind(this);
+    }
+
+    _calcEmptyHeight(contentDocument, targetDocument) {
+        var paddingBottom = contentDocument.offsetHeight;
+        targetDocument.style.paddingBottom = paddingBottom + 20 + "px";
+    }
+
+    componentWillUnmount() {
+        document.body.onresize = null;
     }
 }
 

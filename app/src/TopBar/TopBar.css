@@ -78,6 +78,10 @@ html {
     max-width: 100%;
 }
 
+.top_logo_link {
+    display: block;
+}
+
 li {
     list-style: none;
     float: left;
