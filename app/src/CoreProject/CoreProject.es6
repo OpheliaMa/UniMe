@@ -6,62 +6,64 @@ import CoreProjectItem from "./CoreProjectItem";
 const data = [
     {
         imageSrc: "http://oq9er0rnu.bkt.clouddn.com/project_item_nzup.png",
-        content: (<div><h4 className="project_content_title">NZUP International Middle & High School Project</h4>
-            <p><br /></p>
-            <p>NZUP is an International Middle & High School Project run by SHU-UTS SILC Business School
-                commissioned by UniMe</p>
+        content: (
+            <div id="nzup_high">
+                <h4 className="project_content_title">NZUP International Middle & High School Project</h4>
+                <p><br /></p>
+                <p>NZUP is an International Middle & High School Project run by SHU-UTS SILC Business School
+                    commissioned by UniMe</p>
 
-            <h5 className="project_content_sub_title">Prospective Students</h5>
-            <p>Domestic Middle and High School in-School Students</p>
-            <p><br /></p>
+                <h5 className="project_content_sub_title">Prospective Students</h5>
+                <p>Domestic Middle and High School in-School Students</p>
+                <p><br /></p>
 
-            <h5 className="project_content_sub_title">Academic Requirement</h5>
-            <p>1. In-school Test Certification+pass Admission Test
-                Middle School Students: Math and English average score not less than 85 points
-                (100-point scale)
-                High School Students: Math and English average score not less than 85 points (100-point
-                scale)</p>
-            <p><br /></p>
+                <h5 className="project_content_sub_title">Academic Requirement</h5>
+                <p>1. In-school Test Certification+pass Admission Test
+                    Middle School Students: Math and English average score not less than 85 points
+                    (100-point scale)
+                    High School Students: Math and English average score not less than 85 points (100-point
+                    scale)</p>
+                <p><br /></p>
 
-            <p>2. No need of high school entrance
-                examination/college entrance examination results</p>
-            <p><br /></p>
+                <p>2. No need of high school entrance
+                    examination/college entrance examination results</p>
+                <p><br /></p>
 
-            <h5 className="project_content_sub_title">Length of Schooling (domestic + abroad) and School Campus</h5>
-            <p>Middle School Student：2+1 High School Student：1+1</p>
-            <p><br /></p>
-            <p>Domestic Stage: SHU-UTS SILC Business School<br/>Stage Abroad：Abacus Institute of Studies
-                (AIS)—directly affiliated to UniMe</p>
-            <p><br /></p>
-            <h5 className="project_content_sub_title">Diploma and Further Education Channel</h5>
-            <p>1. NZUP graduates will receive a high school diploma issued by the New Zealand Department
-                of
-                Education</p>
-            <p><br /></p>
-            <p>2. Upon graduation, students can apply for global elite universities, apply to the
-                Commonwealth country universities without IELTS score and preparatory schools. Oxford
-                University, Cambridge University, Massachusetts Institute of Technology, Stanford
-                University</p>
-            <p><br /></p>
-            <p>3. NZUP Student Agreement promises that all students will receive offer letters from top
-                8
-                universities in New Zealand, and more than 90% graduates will study at Auckland
-                University
-                [World ranking is equivalent to Shanghai Fudan University]</p>
-            <p><br /></p>
-            <p>4. NZUP graduates who choose to stay in New Zealand will achieve permanent resident
-                status
-                in New Zealand and skilled migrants</p>
-            <p><br /></p>
-            <h5 className="project_content_sub_title">Tuition: 148,000 / year (Unified costs at home and
-                abroad)</h5>
-            <p>Domestic Stage Fees Include: Tuition Fees, Teaching Materials, Accommodation Costs<br />Stage
-                Abroad Fees Include: Tuition Fees</p></div>)
+                <h5 className="project_content_sub_title">Length of Schooling (domestic + abroad) and School Campus</h5>
+                <p>Middle School Student：2+1 High School Student：1+1</p>
+                <p><br /></p>
+                <p>Domestic Stage: SHU-UTS SILC Business School<br/>Stage Abroad：Abacus Institute of Studies
+                    (AIS)—directly affiliated to UniMe</p>
+                <p><br /></p>
+                <h5 className="project_content_sub_title">Diploma and Further Education Channel</h5>
+                <p>1. NZUP graduates will receive a high school diploma issued by the New Zealand Department
+                    of
+                    Education</p>
+                <p><br /></p>
+                <p>2. Upon graduation, students can apply for global elite universities, apply to the
+                    Commonwealth country universities without IELTS score and preparatory schools. Oxford
+                    University, Cambridge University, Massachusetts Institute of Technology, Stanford
+                    University</p>
+                <p><br /></p>
+                <p>3. NZUP Student Agreement promises that all students will receive offer letters from top
+                    8
+                    universities in New Zealand, and more than 90% graduates will study at Auckland
+                    University
+                    [World ranking is equivalent to Shanghai Fudan University]</p>
+                <p><br /></p>
+                <p>4. NZUP graduates who choose to stay in New Zealand will achieve permanent resident
+                    status
+                    in New Zealand and skilled migrants</p>
+                <p><br /></p>
+                <h5 className="project_content_sub_title">Tuition: 148,000 / year (Unified costs at home and
+                    abroad)</h5>
+                <p>Domestic Stage Fees Include: Tuition Fees, Teaching Materials, Accommodation Costs<br />Stage
+                    Abroad Fees Include: Tuition Fees</p></div>)
     },
     {
         imageSrc: "http://oq9er0rnu.bkt.clouddn.com/project_item_nzup.png",
         content: (
-            <div>
+            <div id="nzup_prep">
                 <h4 className="project_content_title">NZUP International Preparatory Course Project</h4>
                 <p><br /></p>
                 <h5 className="project_content_sub_title">Prospective Students</h5>
@@ -105,9 +107,9 @@ const data = [
             </div>)
     },
     {
-        imageSrc: "http://oq9er0rnu.bkt.clouddn.com/project_item_dbm.png",
+        imageSrc: "http://oq9er0rnu.bkt.clouddn.com/project_item_3pn.png",
         content: (
-            <div>
+            <div id="nzup_3pn">
                 <h4 className="project_content_title">3+N International Bachelor & Master Degree Program</h4>
                 <p><br /></p>
                 <p>3+N International Bachelor & Master Degree Program is a co-built two-diploma international
@@ -163,9 +165,9 @@ const data = [
         )
     },
     {
-        imageSrc: "http://oq9er0rnu.bkt.clouddn.com/project_item_3pn.png",
+        imageSrc: "http://oq9er0rnu.bkt.clouddn.com/project_item_dbm.png",
         content: (
-            <div>
+            <div id="nzup_dbm">
                 <h4 className="project_content_title">DBM-Massey Master Degree Program</h4>
                 <p><br /></p>
                 <h5 className="project_content_sub_title">Prospective Students</h5>
@@ -214,7 +216,8 @@ class CoreProject extends React.Component {
                     <h1 className="project_title">CORE PROJECTS</h1>
                     <div className="project_content_list">
                         {data.map((item, index) => {
-                            return <CoreProjectItem key={"item" + index} imageSrc={item.imageSrc} content={item.content}/>
+                            return <CoreProjectItem key={"item" + index} imageSrc={item.imageSrc}
+                                                    content={item.content}/>
                         })}
                     </div>
                 </div>
@@ -229,6 +232,22 @@ class CoreProject extends React.Component {
     componentDidMount() {
         var contentDocument = document.getElementById("project_content_container");
         var targetDocument = document.getElementById("project_empty");
+
+        var anchor = window.location.hash;
+
+        if (anchor) {
+            var docId = anchor.replace("#", "");
+            var targetToScroll;
+            if (docId && (targetToScroll = document.getElementById(docId))) {
+                targetToScroll.scrollIntoView();
+                window.scrollBy(0, -100);
+            } else {
+                window.scrollTo(0, 0);
+            }
+        } else {
+            window.scrollTo(0, 0);
+        }
+
         this._calcEmptyHeight(contentDocument, targetDocument);
         document.body.onresize = function () {
             this._calcEmptyHeight(contentDocument, targetDocument);

@@ -2,6 +2,7 @@ import * as React from "react";
 import './HomePage.css'
 import Footer from "../Footer/Footer";
 import ContactUs from "../ContactUs/ContactUs";
+import NavLink from "react-router-dom/es/NavLink";
 
 class HomePage extends React.Component {
 
@@ -32,7 +33,7 @@ class HomePage extends React.Component {
 
 
                 <div className="homepage_gallery">
-                    <div ref="nzupLogo" className="home_gal_item home_gal_nzup" onMouseOver={this._mouseOver.bind(this)}
+                    <NavLink to="/core#nzup_high" className="home_gal_item home_gal_nzup" onMouseOver={this._mouseOver.bind(this)}
                          onMouseOut={this._mouseOut.bind(this)}>
                         <div className="home_gal_item_cover_container">
                             <img className="home_gal_item_cover" src="http://oq9er0rnu.bkt.clouddn.com/nzup.png"/>
@@ -42,14 +43,14 @@ class HomePage extends React.Component {
 
                         <div className="home_gal_item_des_container">
                             <div className="home_gal_item_des">
-                                <p>NZUP Program</p>
+                                <p>NZUP - Middle & High School</p>
                                 <img className="nzup_logo" src={this.state.nzupSrc}/>
                             </div>
                         </div>
 
-                    </div>
+                    </NavLink>
 
-                    <div className="home_gal_item home_gal_3plusn">
+                    <NavLink to="/core#nzup_prep" className="home_gal_item home_gal_3plusn">
 
                         <div className="home_gal_item_cover_container">
                             <img className="home_gal_item_cover" src="http://oq9er0rnu.bkt.clouddn.com/3plusn.png"/>
@@ -58,14 +59,13 @@ class HomePage extends React.Component {
                         </div>
                         <div className="home_gal_item_des_container">
                             <div className="home_gal_item_des">
-                                <p>3+N International Bachelor & Master</p>
-                                <p>Degree Program</p>
+                                <p>NZUP - Preparatory Course</p>
                             </div>
                         </div>
 
-                    </div>
+                    </NavLink>
 
-                    <div className="home_gal_item home_gal_dbm">
+                    <NavLink to="/core#nzup_3pn" className="home_gal_item home_gal_dbm">
 
                         <div className="home_gal_item_cover_container">
                             <img className="home_gal_item_cover" src="http://oq9er0rnu.bkt.clouddn.com/dbm.png"/>
@@ -75,15 +75,15 @@ class HomePage extends React.Component {
                         <div className="home_gal_item_des_container">
                             <div>
                                 <div className="home_gal_item_des">
-                                    <p>DBM-Massey</p>
-                                    <p>Master Degree Program</p>
+                                    <p>3+N International Bachelor & Master</p>
+                                    <p>Degree Program</p>
                                 </div>
                             </div>
                         </div>
 
-                    </div>
+                    </NavLink>
 
-                    <div className="home_gal_item home_gal_elites">
+                    <NavLink to="/core#nzup_dbm" className="home_gal_item home_gal_elites">
 
                         <div className="home_gal_item_cover_container">
                             <img className="home_gal_item_cover" src="http://oq9er0rnu.bkt.clouddn.com/elites.png"/>
@@ -92,12 +92,12 @@ class HomePage extends React.Component {
                         </div>
                         <div className="home_gal_item_des_container">
                             <div className="home_gal_item_des">
-                                <p>Global Youth Tour of</p>
-                                <p>Professional Elites</p>
+                                <p>DBM-Massey</p>
+                                <p>Master Degree Program</p>
                             </div>
                         </div>
 
-                    </div>
+                    </NavLink>
 
                 </div>
 
@@ -158,6 +158,10 @@ class HomePage extends React.Component {
             </div>
         )
             ;
+    }
+
+    componentDidMount() {
+        window.scrollTo(0, 0);
     }
 }
 
