@@ -14,7 +14,8 @@ class AboutUs extends React.Component {
                     <div className="about_content_desc">
                         <div>
                             <h1 className="about_content_title">About University for Me (UniMe)</h1>
-                            <img src="http://oq9er0rnu.bkt.clouddn.com/about_logo1.png" className="about_content_logo1"/>
+                            <img src="http://oq9er0rnu.bkt.clouddn.com/about_logo1.png"
+                                 className="about_content_logo1"/>
                         </div>
                         <p><br /></p>
                         <p>Founded in 2014 and headquartered in New Zealand, University For Me (hereinafter to be
@@ -25,8 +26,8 @@ class AboutUs extends React.Component {
                             world.</p>
                         <p><br /></p>
                         <p>UniMe China was established in 2014 in order to provide better international education
-                            quality resources and New Zealand core education models to Mainland China students. Juntian
-                            International, as the sole official institution of UniMe in Mainland China, provides a full
+                            quality resources and New Zealand core education models to Mainland China students. UniMe
+                            China, as the sole official institution of UniMe in Mainland China, provides a full
                             range of academic and resource support for Chinese students to achieve higher education,
                             elite education and continuous successful performance in global education.</p>
                         <p><br /></p>
@@ -35,16 +36,17 @@ class AboutUs extends React.Component {
                             around the world and well-known universities in New Zealand.</p>
                         <p><br /></p>
                         <div>
-                            <h1 className="about_content_title">About UniMe China Juntian International</h1>
-                            <img src="http://oq9er0rnu.bkt.clouddn.com/about_logo2.png" className="about_content_logo2"/>
+                            <h1 className="about_content_title">About UniMe China International</h1>
+                            <img src="http://oq9er0rnu.bkt.clouddn.com/about_logo2.png"
+                                 className="about_content_logo2"/>
                         </div>
                         <p><br /></p>
-                        <p>Established in 2009, Juntian International has been focused on the industrial chain layout of
-                            international education. Affiliated to University For Me (UniMe), Juntian International is
+                        <p>Established in 2009, UniMe China has been focused on the industrial chain layout of
+                            international education. Affiliated to University For Me (UniMe), UniMe China is
                             the
                             sole official institution of UniMe in Mainland China. As a professional resource
                             introduction
-                            and management company in the field of international education, Juntian International has
+                            and management company in the field of international education, UniMe China has
                             always
                             been dedicated to providing providing the best resources and integrated operation
                             solutions.</p>

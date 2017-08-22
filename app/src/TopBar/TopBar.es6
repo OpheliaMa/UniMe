@@ -12,7 +12,7 @@ class TopBar extends React.Component {
                 <div className="top">
                     <div className="top_logo_container">
                         <NavLink to="/" exactclassName="top_logo_link">
-                            <img className="top_logo" src="http://oq9er0rnu.bkt.clouddn.com/logo_top.png"/>
+                            <img className="top_logo" src="http://oq9er0rnu.bkt.clouddn.com/logo_top_revised.png"/>
                         </NavLink>
                     </div>
                     <ul className="top_nav">

@@ -16,7 +16,7 @@ class Footer extends React.Component {
 
                 <div className="home_footer_nav_container">
                     <div className="home_footer_logo_container">
-                        <img className="home_footer_logo" src="http://oq9er0rnu.bkt.clouddn.com/logo_bottom.png"/>
+                        <img className="home_footer_logo" src="http://oq9er0rnu.bkt.clouddn.com/logo_bottom_revised.png"/>
                     </div>
                     <div className="home_footer_nav">
                         <div className="home_footer_nav_text"><NavLink to="/" exact activeClassName="selected">Homepage</NavLink></div>
@@ -29,7 +29,7 @@ class Footer extends React.Component {
                         <i></i>
                         <div className="home_footer_nav_text"><NavLink to="/about" activeClassName="selected">About Us</NavLink></div>
                         <i></i>
-                        <div className="home_footer_nav_text"><NavLink to="/">Chinese</NavLink></div>
+                        <div className="home_footer_nav_text"><a href="/chinese">Chinese</a></div>
                     </div>
                 </div>
 

@@ -1,7 +1,7 @@
 var path = require('path');
 
 module.exports = {
-    entry: './app/src/App.es6',
+    entry: ['whatwg-fetch','./app/src/App.es6'],
     output: {
         filename: 'bundle.js',
         path: path.resolve('./app/', 'dist')
